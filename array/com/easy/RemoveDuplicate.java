@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class RemoveDuplicate {
 
-    // 1. approch
+    // 1. approch (this logic could not work for sorted array)
     public ArrayList<Integer>  remove(int[] arr){
         ArrayList<Integer> result = new ArrayList<>();
         if(arr.length < 0){
@@ -17,7 +17,6 @@ public class RemoveDuplicate {
                 result.add(arr[i]);
             }
         }
-
         return result;
     }
 

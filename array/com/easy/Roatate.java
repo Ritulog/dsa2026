@@ -4,7 +4,7 @@ public class Roatate {
     public void roatateArray(int[] arr, int d){
         int n = arr.length;
 
-        //for raotation
+        //for rotation
         for(int i=0; i<d; i++){
 
             int last = arr[n-1];
