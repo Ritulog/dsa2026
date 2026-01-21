@@ -50,6 +50,33 @@ public class TwoSum {
     }
 
 
+    // using two pointer
+    static boolean twoSum2(int[] arr, int target){
+
+        Arrays.sort(arr);
+
+        int left = 0, right = arr.length - 1;
+
+        // Iterate while left pointer is less than right
+        while (left < right) {
+            int sum = arr[left] + arr[right];
+
+            // Check if the sum matches the target
+            if (sum == target)
+                return true;
+            else if (sum < target)
+
+                // Move left pointer to the right
+                left++;
+            else
+
+                // Move right pointer to the left
+                right--;
+        }
+        // If no pair is found
+        return false;
+    }
+
 
 
     public static void main(String[] args) {
